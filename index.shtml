@@ -1,171 +1,122 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<HTML>
-  <HEAD>
-    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <META http-equiv="Content-Script-Type" content="text/javascript">
-    <META http-equiv="Content-Style-Type" content="text/css">
-    <META name="robots" content="index">
-    <META name="keywords" content="programing,java,C,C++,perl,javascript,cgi,harbot">
-    <META name="author" content="Yoshitaka Oyamatsu">
-    <META name="copyright" content="Copyright (C) 1996-2019 Yoshitaka Oyamatsu, All rights reserved.">
-    <META name="google-site-verification" content="JkcBT6dVDKfCXfaulNwJHO7WyDtY84iQWykaYJktSWM" />
-    <LINK rev="made" href="mailto:webmaster@oyamatsu.net">
-    <LINK rel="stylesheet" type="text/css" href="./lib/StyleSheet/basicStyle.css"></STYLE>
-    <TITLE>the Planet Mobius</TITLE>
-  </HEAD>
-  <BODY bgcolor="#000000" text="#ffffff" link="#FF0000" vlink="#FF3333" alink="#00FF00" topmargin="5" marginheight="5">
-    <DIV class="title">
-      the Planet Mobius
-    </DIV>
-    <DIV align="center">
-      <HR size="2" noshade>
-    </DIV>
-    <DIV class="smallNotice">Sorry!! No english version was available.</DIV>
-    <DIV align="center">
-      <P>
-        このページは、諸事情により閉鎖しています。<BR>
-      </P>
-      <P>
-        このホームページに関する御意見、御感想は、下記のメールアドレスにお寄せください。<BR>
-        <BR>
-        <I>E-Mail address : <A href="mailto:webmaster@oyamatsu.net">webmaster@oyamatsu.net</A></I><BR>
-        <BR>
-        <TABLE border="0">
-          <TR>
-            <TD>新着情報</TD>
-            <TD>：</TD>
-            <TD class="topics">2017/05/30</TD>
-            <TD class="topics">諸事情により、このページを閉鎖しました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2006/02/05</TD>
-            <TD>blogを公開しました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2006/02/05</TD>
-            <TD>Tickerをバージョンアップしました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2006/02/05</TD>
-            <TD>トップページのレイアウトを少し変更しました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/12/09</TD>
-            <TD>BBSのレイアウトを少し変更しました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/12/09</TD>
-            <TD>ホームページ作成奮戦記の第四弾をアップしました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/11/25</TD>
-            <TD>ホームページ作成奮戦記の第三弾をアップしました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/11/15</TD>
-            <TD>Tickerを設置しました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/11/12</TD>
-            <TD>JavaScriptのメニューが使えない人のために、テキストメニューを追加しました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/11/10</TD>
-            <TD>ＢＢＳの半角カナ投稿による文字化けを対処しました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/11/08</TD>
-            <TD>ホームページ作成奮戦記の第二弾をアップしました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/11/08</TD>
-            <TD>Guest Bookの登録時にメールアドレスを非公開に出来るようにしました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/11/01</TD>
-            <TD>ホームページ作成奮戦記を新たに加えました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/10/31</TD>
-            <TD>IEでスタイルシートが使えなかった不具合を修正しました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/10/31</TD>
-            <TD>BBSのβ版を設置しました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/10/15</TD>
-            <TD>Guest Bookを設置しました。</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD>2002/10/02</TD>
-            <TD>harbotを設置しました。</TD>
-          </TR>
-        </TABLE>
-      </P>
-      <HR size="2" noshade>
-      <BR>
-      <DIV align="center">since 2001/06/04</DIV>
-      <BR>
-      <HR size="2" noshade>
-      <BR>
-      <TABLE width="27%" border="0" cellspacing="0" cellpadding="5">
-        <TR> 
-          <TD align="center">
-            <A href="http://www.rim.or.jp/index.html">
-              <IMG src="https://www.rim.or.jp/images/logo.png" width="71" height="73" border="0" alt="RIMNET">
-              <DIV class="logoName">
-                リムネット<BR>
-                Rimnet
-              </DIV>
-            </A>
-          </TD>
-        </TR>
-        <TR>
-          <TD align="center" nowrap>
-            <FONT size="+1"><A href="http://www.rim.or.jp/index.html">リムネット トップページへ</A></FONT>
-          </TD>
-        </TR>
-      </TABLE>
-      <BR>
-      <HR size="2" noshade>
-    </DIV>
-    <I>
-      <!--#config timefmt="%A, %d %h %Y %T Just" -->
-      Last Modified : <!--#flastmod file="index.shtml" --><BR>
-      Copyright (C) 1996-2019 Yoshitaka Oyamatsu, All rights reserved.
-    </I>
-  </BODY>
-</HTML>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="programming,java,C,C++,C#,perl,javascript,cgi,harbot">
+    <meta name="author" content="Yoshitaka Oyamatsu">
+    <meta name="copyright" content="Copyright (C) 1996-2026 Yoshitaka Oyamatsu, All rights reserved.">
+    <link rel="stylesheet" type="text/css" href="/lib/StyleSheet/basicStyle.css">
+    <title>Mebius in the Infinite Cosmos</title>
+</head>
+<body>
+    <div class="title">Mebius in the Infinite Cosmos</div>
+    <div class="horizontalLine"><hr></div>
+    <div class="smallNotice">Sorry!! No english version was available.</div>
+    <h1>ようこそ！</h1>
+    <div class="center">
+        <p>このページは、諸事情により閉鎖しています。</p>
+        <p>
+            このホームページに関する御意見、御感想は、下記のメールアドレスにお寄せください。<br><br>
+            <i>E-Mail address : <a href="mailto:webmaster@oyamatsu.net">webmaster@oyamatsu.net</a></i><br><br>
+            <img src="/images/ping/UnderConstruction_20260516_220024.png" width="12%">
+            <table border="0" style="border-collapse:collapse; margin: 0 auto;">
+                <tr>
+                    <td>新着情報</td>
+                    <td>：</td>
+                    <td class="topics">2017/05/30</td>
+                    <td class="topicsMemo">諸事情により、このページを閉鎖しました。</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="information">2006/02/05</td>
+                    <td class="informationMemo">blogを公開しました。</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="information">2006/02/05</td>
+                    <td class="informationMemo">トップページのレイアウトを少し変更しました。</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="information">2001/06/04</td>
+                    <td class="informationMemo">ホームページを新設しました。</td>
+                </tr>
+            </table>
+        </p>
+    </div>
+    <div class="horizontalLine"><hr></div>
+    <div class="center">
+        <table style="width: 42%; border-collapse: collapse; margin: 0 auto;">
+            <tr>
+                <td style="text-align: center;">
+                    <a href="https://www.youtube.com/@jsports_motor">
+                        <img src="https://yt3.ggpht.com/WgOUlfZJF-jMu6DR0FidZ8eH1qeXo6JrXbS_Ui_We-xhRj3FLS_OXG25zykycJbdnhRA0j1Njw=s48-c-k-c0x00ffffff-no-rj" class="logo-img" alt="J-Sports">
+                    </a>
+                </td>
+                <td style="text-align: left; white-space: nowrap;">
+                    <span style="display: inline-flex; align-items: center; gap: 0.4em;">
+                        <a href="https://www.youtube.com/watch?v=7KfOzmo5oDc">[J-Sports] ル・マン24時間レース 2026 スタートパート《Video On Demand配信》</a>
+                        <img src="/images/ping/VOD_20260614_101057.png" width="11%">
+                    </span><br/>
+                    <span style="display: inline-flex; align-items: center; gap: 0.4em;">
+                        <a href="https://www.youtube.com/watch?v=ZS9zKiM0Ycc">[J-Sports] ル・マン24時間レース 2026 サンライズパート《Video On Demand配信》</a>
+                        <img src="/images/ping/VOD_20260614_101057.png" width="11%">
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <a href="https://abema.tv/now-on-air/world-sports">
+                        <img src="https://yt3.ggpht.com/5f99ZO9o_NoRxANdhRKyLif9oBR770mQxpYHjo_fn2X5nJXumfdTpMLtmvo8rZPGXAgbJORf3g=s48-c-k-c0x00ffffff-no-rj" class="logo-img" alt="Ameba Sports">
+                    </a>
+                </td>
+                <td style="text-align: left; white-space: nowrap;">
+                    <span style="display: inline-flex; align-items: center; gap: 0.4em;">
+                        <a href="https://abema.tv/now-on-air/world-sports">[Ameba Sports] ル・マン24時間レース 2026 (※Live配信は終了しました)</a>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="horizontalLine"><hr></div>
+    <div class="center">since 2001/06/04</div>
+    <div class="center">
+        <div style="margin: 0.5em 0; font-size: 11pt; color: lightyellow;">
+            <!--#exec cgi="/cgi-bin/counter.cgi" -->
+        </div>
+    </div>
+    <div class="horizontalLine"><hr></div>
+    <div class="center">
+        <table style="width: 27%; border-collapse: collapse; margin: 0 auto;">
+            <tr>
+                <td style="text-align: center;">
+                    <a href="https://www.rim.or.jp/index.html">
+                        <img src="https://www.rim.or.jp/images/logo.png" width="71" height="73" class="logo-img" alt="RIMNET">
+                        <!-- <div class="logoName">リムネット<br>Rimnet</div> -->
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; white-space: nowrap;">
+                    <span class="rimnet-link"><a href="https://www.rim.or.jp/index.html">リムネット トップページへ</a></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="horizontalLine"><hr><div>
+    <div class="footer">
+        <i>
+            <!--#config timefmt="%A, %d %h %Y %T Just" -->
+            Last Modified : <!--#flastmod file="index.shtml" --><br>
+            Copyright (C) 1996-2026 Yoshitaka Oyamatsu, All rights reserved.
+        </i>
+    </div>
+
+    <!--#exec cgi="/cgi-bin/access_log.cgi" -->
+</body>
+</html>
