@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+  <HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META http-equiv="Content-Script-Type" content="text/javascript">
+    <META http-equiv="Content-Style-Type" content="text/css">
+    <META name="robots" content="index">
+    <META name="keywords" content="programing,java,C,C++,perl,javascript,cgi,harbot">
+    <META name="author" content="Yoshitaka Oyamatsu">
+    <META name="copyright" content="Copyright (C) 1996-2019 Yoshitaka Oyamatsu, All rights reserved.">
+    <META name="google-site-verification" content="JkcBT6dVDKfCXfaulNwJHO7WyDtY84iQWykaYJktSWM" />
+    <LINK rev="made" href="mailto:webmaster@oyamatsu.net">
+    <LINK rel="stylesheet" type="text/css" href="./lib/StyleSheet/basicStyle.css"></STYLE>
+    <TITLE>the Planet Mobius</TITLE>
+  </HEAD>
+  <BODY bgcolor="#000000" text="#ffffff" link="#FF0000" vlink="#FF3333" alink="#00FF00" topmargin="5" marginheight="5">
+    <DIV class="title">
+      the Planet Mobius
+    </DIV>
+    <DIV align="center">
+      <HR size="2" noshade>
+    </DIV>
+    <DIV class="smallNotice">Sorry!! No english version was available.</DIV>
+    <DIV align="center">
+      <P>
+        このページは、諸事情により閉鎖しています。<BR>
+      </P>
+      <P>
+        このホームページに関する御意見、御感想は、下記のメールアドレスにお寄せください。<BR>
+        <BR>
+        <I>E-Mail address : <A href="mailto:webmaster@oyamatsu.net">webmaster@oyamatsu.net</A></I><BR>
+        <BR>
+        <TABLE border="0">
+          <TR>
+            <TD>新着情報</TD>
+            <TD>：</TD>
+            <TD class="topics">2017/05/30</TD>
+            <TD class="topics">諸事情により、このページを閉鎖しました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2006/02/05</TD>
+            <TD>blogを公開しました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2006/02/05</TD>
+            <TD>Tickerをバージョンアップしました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2006/02/05</TD>
+            <TD>トップページのレイアウトを少し変更しました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/12/09</TD>
+            <TD>BBSのレイアウトを少し変更しました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/12/09</TD>
+            <TD>ホームページ作成奮戦記の第四弾をアップしました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/11/25</TD>
+            <TD>ホームページ作成奮戦記の第三弾をアップしました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/11/15</TD>
+            <TD>Tickerを設置しました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/11/12</TD>
+            <TD>JavaScriptのメニューが使えない人のために、テキストメニューを追加しました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/11/10</TD>
+            <TD>ＢＢＳの半角カナ投稿による文字化けを対処しました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/11/08</TD>
+            <TD>ホームページ作成奮戦記の第二弾をアップしました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/11/08</TD>
+            <TD>Guest Bookの登録時にメールアドレスを非公開に出来るようにしました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/11/01</TD>
+            <TD>ホームページ作成奮戦記を新たに加えました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/10/31</TD>
+            <TD>IEでスタイルシートが使えなかった不具合を修正しました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/10/31</TD>
+            <TD>BBSのβ版を設置しました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/10/15</TD>
+            <TD>Guest Bookを設置しました。</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD>2002/10/02</TD>
+            <TD>harbotを設置しました。</TD>
+          </TR>
+        </TABLE>
+      </P>
+      <HR size="2" noshade>
+      <BR>
+      <DIV align="center">since 2001/06/04</DIV>
+      <BR>
+      <HR size="2" noshade>
+      <BR>
+      <TABLE width="27%" border="0" cellspacing="0" cellpadding="5">
+        <TR> 
+          <TD align="center">
+            <A href="http://www.rim.or.jp/index.html">
+              <IMG src="https://www.rim.or.jp/images/logo.png" width="71" height="73" border="0" alt="RIMNET">
+              <DIV class="logoName">
+                リムネット<BR>
+                Rimnet
+              </DIV>
+            </A>
+          </TD>
+        </TR>
+        <TR>
+          <TD align="center" nowrap>
+            <FONT size="+1"><A href="http://www.rim.or.jp/index.html">リムネット トップページへ</A></FONT>
+          </TD>
+        </TR>
+      </TABLE>
+      <BR>
+      <HR size="2" noshade>
+    </DIV>
+    <I>
+      <!--#config timefmt="%A, %d %h %Y %T Just" -->
+      Last Modified : <!--#flastmod file="index.shtml" --><BR>
+      Copyright (C) 1996-2019 Yoshitaka Oyamatsu, All rights reserved.
+    </I>
+  </BODY>
+</HTML>
