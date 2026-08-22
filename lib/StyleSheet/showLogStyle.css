@@ -26,7 +26,7 @@ a {
     top: 0;
     background: #1a1a1a;
     z-index: 2;
-    padding: 10px 0 6px 0;
+    padding: 1px 0 5px 0;
 }
 
 #page-header h2 {
@@ -91,4 +91,12 @@ th {
 .referrer {
     white-space: nowrap;        /* 文字列を折り返して表示しない */
     width: auto;                /* 列幅を自動調整 */
+}
+
+.myip {
+    color: mediumseagreen;
+}
+
+.dangerous-ip {
+    color: crimson;
 }

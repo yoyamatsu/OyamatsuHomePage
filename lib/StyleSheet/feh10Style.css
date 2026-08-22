@@ -1,136 +1,344 @@
 html, body {
-    background-color: #eeeeff;
-    margin-top: 2px;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-bottom: 2px;
-    padding: 0px;
-    font-family: Meiryo UI;
+    background-color: #f5ead8;
+    margin: 0;
+    padding: 12px;
+    font-family: 'BIZ UDゴシック', 'Meiryo UI', sans-serif;
 }
 
-table {
-    border-collapse: collapse;
-    border-color: #cccccc;
+.wrap {
+    max-width: 660px;
 }
 
-table tr:nth-child(odd) {
-    background-color: #ffffff;
+.album-wrap {
+    max-width: 2640px;
 }
 
-table tr:nth-child(even) {
-    background-color: #dddddd;
+/* ヘッ\ダー */
+.hero {
+    background: #7a5c3a;
+    border-radius: 8px;
+    padding: 1.75rem 2rem;
+    margin-bottom: 1.25rem;
+    border: 2px solid #a07850;
 }
 
-table th {
-    background: linear-gradient(#829ebc, #225588);
-    border-left: 1px solid #3c6690;
-    border-top: 1px solid #bad3ff;
-    border-bottom: 1px solid #3c6690;
-    border-right: 1px solid #bad3ff;
-    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
-    color: white;
-    padding-left: 6px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 6px;
-    font-weight: lighter;
+.hero-deco {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.6rem;
 }
 
-table td {
-    border: solid 1px;
-    border-color: #cccccc;
-    padding-left: 6px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 6px;
+.hero-line {
+    flex: 1;
+    height: 1px;
+    background: #c8a87a;
 }
 
-table th#name {
-    vertical-align: bottom;
-    -moz-text-align-last: justify;
-    text-align-last: justify;
-    text-justify: inter-ideograph;
+.hero-mark {
+    font-size: 13px;
+    color: #e8d5b0;
+    letter-spacing: 0.15em;
 }
 
-table th#name_kana {
-    vertical-align: bottom;
-    -moz-text-align-last: center;
-    text-align-last: center;
-    text-justify: inter-ideograph;
+.hero h1 {
+    margin: 0 0 0.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f5ead8;
+    letter-spacing: 0.08em;
+    text-align: left;
 }
 
-table th#new_name {
-    vertical-align: bottom;
-    -moz-text-align-last: center;
-    text-align-last: center;
-    text-justify: inter-ideograph;
+.hero p {
+    margin: 0;
+    font-size: 13px;
+    color: #d4b990;
+    line-height: 1.8;
+    text-align: left;
 }
 
-table th#junior_high {
-    vertical-align: bottom;
+/* 説明ボックス */
+.info-box {
+    background: #fdf6ec;
+    border: 1px solid #d4b88a;
+    border-left: 4px solid #a07850;
+    padding: 0.75rem 1rem;
+    font-size: 13px;
+    color: #5c4020;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
 }
 
-#btn_square {
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    padding: 0.25em 0.5em;
-    text-decoration: none;
-    background: #ddeeff;
-    color: #555555;
-    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
-    border-bottom: solid 2px #118e9e;
-    border-radius: 4px;
-    font-weight: bold;
-    text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+.info-icon {
+    font-size: 15px;
+    line-height: 1.8;
+    flex-shrink: 0;
 }
 
-#btn_square:active {
-    border-bottom: solid 2px #d3d3d3;
-    box-shadow: none;
-    text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+.info-text {
+    line-height: 1.8;
+    margin-right: 0.8rem;
 }
 
-#search_container input[type="submit"] {
-    cursor: pointer;
-    font-family: Meiryo UI;
-    font-size: 14px;
-    border: none;
-    background: #d3d3d3;
-    border: 1px solid #d3d3d3;
+/* 検索カード */
+.card {
+    background: #fffdf8;
+    border: 1px solid #d4b88a;
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #7a5c3a;
+    margin: 0 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid #e8d5b0;
+    padding-bottom: 0.6rem;
+    letter-spacing: 0.05em;
+}
+
+.field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    color: #7a5c3a;
+    margin-bottom: 4px;
+    letter-spacing: 0.03em;
+}
+
+.field input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 34px;
+    border: 1px solid #c8a87a;
     border-radius: 3px;
-    color: #ffffff;
+    padding: 0 10px;
+    font-size: 14px;
+    background: #fffef9;
+    color: #3a2a10;
+    font-family: 'BIZ UDゴシック', 'Meiryo UI', sans-serif;
+}
+
+.field input:focus {
     outline: none;
-    width: 3.5em;
-    height: 1.9em;
-    display: inline-block;
+    border-color: #a07850;
+    box-shadow: 0 0 0 2px rgba(160, 120, 80, 0.15);
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 0.25rem;
+}
+
+.btn-search {
+    background: #7a5c3a;
+    color: #f5ead8;
+    border: 1px solid #5c3e20;
+    border-radius: 3px;
+    padding: 0 1.4rem;
+    height: 34px;
+    font-size: 14px;
+    font-family: 'BIZ UDゴシック', 'Meiryo UI', sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+}
+
+.btn-search:hover {
+    background: #a07850;
+}
+
+.btn-clear {
+    background: #fffdf8;
+    color: #7a5c3a;
+    border: 1px solid #c8a87a;
+    border-radius: 3px;
+    padding: 0 1rem;
+    height: 34px;
+    font-size: 14px;
+    font-family: 'BIZ UDゴシック', 'Meiryo UI', sans-serif;
+    cursor: pointer;
+}
+
+.btn-clear:hover {
+    background: #f5ead8;
+}
+
+/* フッター */
+.footer {
+    font-size: 11px;
+    color: #a07850;
+    text-align: left;
+    padding-top: 0.4rem;
+    letter-spacing: 0.03em;
+}
+
+/* 検索結果ページ */
+.result-wrap {
+    max-width: 900px;
+}
+
+.result-card {
+    background: #fffdf8;
+    border: 1px solid #d4b88a;
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.result-table thead tr:first-child th {
+    background: #7a5c3a;
+    color: #f5ead8;
+    padding: 7px 10px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border: 1px solid #5c3e20;
+    white-space: nowrap;
+}
+
+.result-table thead tr:last-child th {
+    background: #a07850;   /* 茶系の少し明るい色で1行目と区別 */
+    color: #f5ead8;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 12px;
+    border: 1px solid #5c3e20;
+    white-space: nowrap;
+}
+.result-table tbody tr:nth-child(odd) {
+    background-color: #fffdf8;
+}
+
+.result-table tbody tr:nth-child(even) {
+    background-color: #f5ead8;
+}
+
+.result-table tbody tr:hover {
+    background-color: #eddfc8;
+}
+
+.result-table td {
+    border: 1px solid #d4b88a;
+    padding: 6px 10px;
+    color: #3a2a10;
     vertical-align: middle;
+    padding: 15px 10px;  /* 上下15px 左右10px */
+}
+
+.result-table td.td-name {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.result-table td.td-kana {
+    font-size: 12px;
+    color: #7a5c3a;
+    white-space: nowrap;
+}
+
+.result-table td.td-class {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.result-table td.td-class a {
+    color: #7a5c3a;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.result-table td.td-class a:hover {
+    color: #a07850;
+}
+
+.result-table td.td-teacher {
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.result-table td.td-empty {
+    text-align: center;
+    color: #c8a87a;
+}
+
+/* 該当なし */
+.empty-box {
+    background: #fffdf8;
+    border: 1px solid #d4b88a;
+    border-radius: 6px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 13px;
+    color: #7a5c3a;
+    margin-bottom: 1rem;
+    line-height: 1.8;
 }
 
 img#album {
-    width: 38%;
-    height: 38%;
+    width: 49%;
+    height: 49%;
 }
 
-a#btn_style_link {
-    margin-top: 4px;
+.album-left {
+    width: 49%;
+    height: 49%;
+    margin-bottom: 0.5rem;
+}
+
+.album-right {
+    width: 49%;
+    height: 49%;
+    margin-bottom: 0.5rem;
+}
+
+/* 戻るボタン */
+.back-area {
+    margin-bottom: 0.5rem;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #fffdf8;
+    color: #7a5c3a;
+    border: 1px solid #c8a87a;
+    border-radius: 3px;
+    padding: 0 1rem;
+    height: 34px;
+    font-size: 13px;
+    font-family: 'BIZ UDゴシック', 'Meiryo UI', sans-serif;
     cursor: pointer;
-    position: relative;
-    display: inline-block;
-    font-family: Meiryo UI;
-    font-size: 12px;
-    font-weight: bold;
-    background-color: #ddeeff;
-    border: 1px solid #8888ff;
-    border-radius: 4px;
-    padding: 0.25em 0.5em;
-    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
     text-decoration: none;
-    text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+    letter-spacing: 0.03em;
 }
 
-a#btn_style_link:hover {
-    color: #ffffff;
-    background-color: #a9a9a9;
-    text-shadow: 0px 0px 3px #fffffff;
+.btn-back:hover {
+    background: #f5ead8;
+    color: #5c3e20;
 }

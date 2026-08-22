@@ -1,32 +1,51 @@
-<HTML>
-<HEAD>
-<TITLE>404 Not Found</TITLE>
-</HEAD>
-<BODY>
-<H1>Not Found</H1>
-The requested document was not found on this server.
-<P>
-<HR>
-<ADDRESS>
-Web Server at oyamatsu.net
-</ADDRESS>
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/lib/StyleSheet/notFoundStyle.css">
+    <title>404 Not Found</title>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="content">
+        <div class="label">error_code</div>
+        <div class="glitch">404</div>
+
+        <p class="title">お探しのページは見つかりませんでした。</p>
+
+        <div class="msg">
+            <p class="msg-en">The page you were looking for has disappeared beyond the event horizon.</p>
+            <p class="msg-ja">お探しのページは、事象の地平線の向こうへと消えてしまいました。</p>
+            <p class="msg-en">Please check the URL or try returning to the homepage.</p>
+            <p class="msg-ja">URLを確認するか、ホームページへ戻ってみてください。</p>
+        </div>
+
+        <div class="code-block">
+            <span>GET</span> /requested-page → <span>404</span> Not Found<br>
+            host: <span>oyamatsu.net</span>
+        </div>
+
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="footer">
+            <i>
+                <!--#config timefmt="%A, %d %h %Y %T Just" -->
+                Last Modified : <!--#flastmod file="index.shtml" --><br>
+                Copyright (C) 1996-2026 Yoshitaka Oyamatsu, All rights reserved.
+            </i>
+        </div>
+    </div>
+</body>
+</html>
 
 <!--
-   - Unfortunately, Microsoft has added a clever new
-   - "feature" to Internet Explorer. If the text of
-   - an error's message is "too small", specifically
-   - less than 512 bytes, Internet Explorer returns
-   - its own error message. You can turn that off,
-   - but it's pretty tricky to find switch called
-   - "smart error messages". That means, of course,
-   - that short error messages are censored by default.
-   - IIS always returns error messages that are long
-   - enough to make Internet Explorer happy. The
-   - workaround is pretty simple: pad the error
-   - message with a big comment like this to push it
-   - over the five hundred and twelve bytes minimum.
-   - Of course, that's exactly what you're reading
-   - right now.
-   -->
+  padding to ensure this file exceeds 512 bytes so that older versions of
+  Internet Explorer display this custom error page rather than their own.
+  (The original 404.shtml included this workaround and it is preserved here.)
+-->
