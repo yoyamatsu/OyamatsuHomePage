@@ -1,0 +1,136 @@
+html, body {
+    background-color: #eeeeff;
+    margin-top: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 2px;
+    padding: 0px;
+    font-family: Meiryo UI;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: #cccccc;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table th {
+    background: linear-gradient(#829ebc, #225588);
+    border-left: 1px solid #3c6690;
+    border-top: 1px solid #bad3ff;
+    border-bottom: 1px solid #3c6690;
+    border-right: 1px solid #bad3ff;
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+    color: white;
+    padding-left: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    font-weight: lighter;
+}
+
+table td {
+    border: solid 1px;
+    border-color: #cccccc;
+    padding-left: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+}
+
+table th#name {
+    vertical-align: bottom;
+    -moz-text-align-last: justify;
+    text-align-last: justify;
+    text-justify: inter-ideograph;
+}
+
+table th#name_kana {
+    vertical-align: bottom;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    text-justify: inter-ideograph;
+}
+
+table th#new_name {
+    vertical-align: bottom;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    text-justify: inter-ideograph;
+}
+
+table th#junior_high {
+    vertical-align: bottom;
+}
+
+#btn_square {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    background: #ddeeff;
+    color: #555555;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    border-bottom: solid 2px #118e9e;
+    border-radius: 4px;
+    font-weight: bold;
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+}
+
+#btn_square:active {
+    border-bottom: solid 2px #d3d3d3;
+    box-shadow: none;
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#search_container input[type="submit"] {
+    cursor: pointer;
+    font-family: Meiryo UI;
+    font-size: 14px;
+    border: none;
+    background: #d3d3d3;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    color: #ffffff;
+    outline: none;
+    width: 3.5em;
+    height: 1.9em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img#album {
+    width: 38%;
+    height: 38%;
+}
+
+a#btn_style_link {
+    margin-top: 4px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-family: Meiryo UI;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ddeeff;
+    border: 1px solid #8888ff;
+    border-radius: 4px;
+    padding: 0.25em 0.5em;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+}
+
+a#btn_style_link:hover {
+    color: #ffffff;
+    background-color: #a9a9a9;
+    text-shadow: 0px 0px 3px #fffffff;
+}

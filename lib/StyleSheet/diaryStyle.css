@@ -1,0 +1,16 @@
+.header {
+    color:gold;
+    font-size:16pt;
+    font-weight:bold;
+}
+
+.diaryHeader {
+    color:lightyellow;
+    font-size:14pt;
+    font-weight:bold;
+}
+
+.diaryBody {
+    color:silver;
+    font-size:11pt;
+}

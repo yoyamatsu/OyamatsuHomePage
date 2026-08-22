@@ -1,0 +1,109 @@
+body {
+    background-color: transparent;
+    color: #ffffff;
+    margin: 5px;
+    padding: 0;
+    background-image: url(/images/gif/hoshizora.gif);
+    background-attachment: fixed;
+    font-family: 'BIZ UDゴシック', 'Meiryo UI';
+}
+
+h1 {
+    color: linen;
+    margin: 1.5em 0em 1.5em 0em;  /* 上 1.5em、右 0em、下 1.5em、左 0em */
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ffff99;  /* 淡い黄色(Pastel Yellow) */
+}
+
+a:link {
+    color: #ff0000;  /* 赤 */
+}
+
+a:visited {
+    color: #ff3333;  /* 明るい赤(Vivid Red) */
+}
+
+a:active {
+    color: #00ff00;  /* ライム */
+}
+
+td {
+    padding: 1px 4px 1px 4px;  /* 上 1px、右 4px、下 1px、左 4px */
+}
+
+.f24pt { font-size: 24pt; }
+.f18pt { font-size: 18pt; }
+.f16pt { font-size: 16pt; }
+.f14pt { font-size: 14pt; }
+.f12pt { font-size: 12pt; }
+.f11pt { font-size: 11pt; }
+.f10pt { font-size: 10pt; }
+.f08pt { font-size:  8pt; }
+
+.logo-img {
+    border: none;
+}
+
+.rimnet-link {
+    font-size: 1.1em;
+}
+
+.horizontalLine {
+    text-align: center;
+}
+
+.center {
+    margin: 1.2em 2em 1.2em 2em;  /* 上 1.2em、右 2em、下 1.2em、左 2em */
+    text-align: center;
+}
+
+.bbsTitle {
+    color: gold;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.bbsBody {
+    color: silver;
+    font-size: 11pt;
+}
+
+.topics {
+    color: gold;
+    font-weight: bold;
+}
+
+.topicsMemo {
+    color: gold;
+    font-weight: bold;
+    text-align: left;
+}
+
+.information {
+    text-align: center;
+}
+
+.informationMemo {
+    text-align: left;
+}
+
+.smallNotice {
+    color: lightyellow;
+    font-size: 11pt;
+    margin-top: 0mm;
+    text-align: right;
+}
+
+.title {
+    color: gold;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: left;
+}

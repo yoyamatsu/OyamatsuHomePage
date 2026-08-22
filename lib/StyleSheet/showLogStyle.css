@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    font-family: monospace;
+    font-size: 12px;
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 20px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+a {
+    color: #aaa;
+    font-size: 12px;
+}
+
+#page-header {
+    position: sticky;
+    top: 0;
+    background: #1a1a1a;
+    z-index: 2;
+    padding: 10px 0 6px 0;
+}
+
+#page-header h2 {
+    margin: 0 0 2px 0;
+}
+
+table {
+    border-collapse: separate;  /* sticky との組み合わせで罫線が消えるバグの回避 */
+    border-spacing: 0;          /* セル間の隙間をなくす */
+    margin-top: 0.5em;
+}
+
+table th,
+table td {
+    border-right: 1px solid dimgray;
+    border-bottom: 1px solid dimgray;
+    padding: 2px 4px;           /* 上下、右左 */
+    table-layout: auto;         /* 列幅を自動調整 */
+}
+
+/* テーブル左端・上端の罫線 */
+table th:first-child,
+table td:first-child {
+    border-left: 1px solid dimgray;
+}
+
+thead tr th {
+    border-top: 1px solid dimgray;
+}
+
+thead tr {
+    position: sticky;
+    top: 52px                   /* #page-header の高さに合わせて調整 */;
+    background: #1a1a1a;
+    z-index: 1;
+}
+
+tr {
+    height: 2lh;                /* 2行分の高さを設定 */
+}
+
+th {
+    white-space: nowrap;        /* 文字列を折り返して表示しない */
+    text-align: left;           /* ヘッダ部の左寄せ */
+}
+
+.datetime {
+    white-space: nowrap;        /* 文字列を折り返して表示しない */
+    width: auto;                /* 列幅を自動調整 */
+}
+
+.ip-address {
+    white-space: nowrap;        /* 文字列を折り返して表示しない */
+    width: auto;                /* 列幅を自動調整 */
+}
+
+.host-path {
+    white-space: nowrap;        /* 文字列を折り返して表示しない */
+    width: auto;                /* 列幅を自動調整 */
+}
+
+.referrer {
+    white-space: nowrap;        /* 文字列を折り返して表示しない */
+    width: auto;                /* 列幅を自動調整 */
+}
