@@ -168,6 +168,17 @@
         <div class="cardGrid">
             <div class="linkCard">
                 <div class="cardHeader">
+                    <a href="https://www.youtube.com/@Animagraffs" target="_blank">
+                        <img src="https://yt3.googleusercontent.com/uSnUfWRQFLrGvHoBzwIkxzRhUZfBpWqUz8zwS38nqZ68-o699cTBpOFd3K_Fxl0jsObuaJpY=s160-c-k-c0x00ffffff-no-rj" class="logo-img" alt="Animagraffs" width="40px">
+                    </a>
+                    <span class="channelName">Animagraffs</span>
+                </div>
+                <ul class="videoList">
+                    <li><a href="https://youtu.be/n9-5G4bS0X4" target="_blank">グラマン F-14 トムキャットの仕組み《動画》</a><img src="/images/ping/Video_20260627_032312.png" width="28px"></li>
+                </ul>
+            </div>
+            <div class="linkCard">
+                <div class="cardHeader">
                     <a href="https://www.youtube.com/@notapound" target="_blank">
                         <img src="https://yt3.googleusercontent.com/9uybRpUElt5wVQicPvoM77s0CjOxbH0edDIYrdkEhmwbq78ao61u-xdDyEVNxpF2_f47UJ7s=s160-c-k-c0x00ffffff-no-rj" class="logo-img" alt="Not A Pound For Air To Ground" width="40px">
                     </a>
@@ -214,7 +225,8 @@
                     <span class="channelName">Weatheroid Airi</span>
                 </div>
                 <ul class="videoList">
-                    <li><a href="https://youtu.be/_6ONh0lfgiY" target="_blank">[#ポン子生放送] トークテーマをたくさんもらいました！ - 2026年7月16日《VOD配信》</a><img src="/images/ping/Vod_20260627_032312.png" width="28px"></li>
+                    <li><a href="https://youtu.be/B9OX9aMAQP8" target="_blank">[#ポン子生放送] 暑い日はそうめんを食べよう！ - 2026年8月20日 LiVE《VOD配信》</a><img src="/images/ping/Vod_20260627_032312.png" width="28px"></li>
+                    <li><a href="https://youtu.be/_6ONh0lfgiY" target="_blank">[#ポン子生放送] トークテーマをたくさんもらいました！ - 2026年7月16日 LiVE《VOD配信》</a><img src="/images/ping/Vod_20260627_032312.png" width="28px"></li>
                 </ul>
             </div>
         </div>
