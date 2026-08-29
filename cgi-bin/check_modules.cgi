@@ -1,16 +1,15 @@
 #!/usr/bin/perl
-use strict;
-use warnings;
+print "Content-Type: text/plain\n\n";
+print "Perl OK\n";
 
-print "Content-Type: text/plain; charset=UTF-8\n\n";
+require MIME::Base64;
+print "MIME::Base64: OK\n";
 
-# 各モジュールが使えるか確認
-my @modules = ('Digest::SHA1', 'Digest::SHA', 'Digest::MD5', 'MIME::Base64');
+require Digest::SHA1;
+print "Digest::SHA1: OK\n";
 
-for my $mod (@modules) {
-    if (eval "use $mod; 1") {
-        print "$mod : OK\n";
-    } else {
-        print "$mod : NG (使用不可)\n";
-    }
-}
+require Digest::SHA;
+print "Digest::SHA: OK\n";
+
+require Digest::MD5;
+print "Digest::MD5: OK\n";

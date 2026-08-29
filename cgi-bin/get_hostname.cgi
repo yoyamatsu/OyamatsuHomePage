@@ -4,11 +4,11 @@ use strict;
 use warnings;
 use POSIX qw(strftime);
 
-my $rmt_addr  = $ENV{REMOTE_ADDR};               # IPアドレス情報
+my $rmt_addr  = $ENV{REMOTE_ADDR} || "unknown";         # IPアドレス情報
 my $host_name = get_host_name($rmt_addr);
 
 # HTTPレスポンス
-#print "Content-Type: text/html; charset=UTF-8\n\n";
+print "Content-Type: text/html; charset=UTF-8\n\n";
 print "IPアドレス情報: $rmt_addr<br>\n";
 print "ホスト名　　　: $host_name<br>\n";
 
@@ -25,13 +25,11 @@ sub get_host_name {
 
         if(defined $visit_addr && $visit_addr ne '') {
             $rtn_addr = $visit_addr . '(' . $ip_addr . ')';
-        }
-        else {
+        } else {
             $rtn_addr = $ip_addr;
         }
-    }
-    else {
-        $rtn_addr = $info_data;
+    } else {
+        $rtn_addr = $info_data // "unknown";
     }
 
     return $rtn_addr;

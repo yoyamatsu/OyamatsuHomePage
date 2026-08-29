@@ -9,20 +9,44 @@ use CGI;
 # Copyright(C) 2026 Yoshitaka Oyamatsu All rights reserved.
 #
 # Created : 2026/06/20(Sa)
-# Updated : 
+# Updated : 2026/06/21(Su)
 # Author  : Yoshitaka Oyamatsu
-# Version : 0.0
+# Version : 0.1
 ################################################################################
 
-require '/home/ms001641/lib/perl/sha1_utils.pl';
+my $q = CGI->new;
+
+eval {
+    require '/home/ms001641/lib/perl/sha1_utils.pl';
+    require '/home/ms001641/public_html/cgi-bin/common_functions.pl';
+
+    1;
+} or do {
+    my $err = $@ || 'Unknown error';
+
+    print $q->header(-type => 'text/html', -charset => 'UTF-8');
+    print <<HTML;
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Access Log - Error</title>
+</head>
+<body>
+    <p>内部エラーが発生しました。しばらくしてから再度お試しください。</p>
+</body>
+</html>
+HTML
+
+    exit;
+};
 
 # パスワードファイルのパス（公開ディレクトリの外に置く）
 my $password_file = "/home/ms001641/.show_log_password";
 
 # ログファイルのパス
 my $log_file = "/home/ms001641/public_html/log/feh10_access_log.txt";
-
-my $q = CGI->new;
 
 print $q->header(-type => 'text/html', -charset => 'UTF-8');
 
@@ -34,20 +58,6 @@ close($pfh);
 
 my $password      = $q->param('password') || '';
 my $authenticated = ($password ne '' && sha1_hash($password) eq $stored_hash);
-
-#-------------------------------------------------------------------------------
-# HTMLエスケープ
-#-------------------------------------------------------------------------------
-sub html_escape {
-    my ($str) = @_;
-
-    $str =~ s/&/&amp;/g;
-    $str =~ s/</&lt;/g;
-    $str =~ s/>/&gt;/g;
-    $str =~ s/"/&quot;/g;
-
-    return $str;
-}
 
 #-------------------------------------------------------------------------------
 # メイン処理
@@ -63,12 +73,12 @@ if ($authenticated) {
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
-    <title>Access Log</title>
+    <title>Feh10 Access Log</title>
     <link rel="stylesheet" type="text/css" href="/lib/StyleSheet/showLogStyle.css">
 </head>
 <body>
     <div id="page-header">
-        <h2>Access Log</h2>
+        <h2>Feh10 Access Log</h2>
         <a href="/cgi-bin/change_password.cgi">パスワード変更</a>
     </div>
     <table>
@@ -102,51 +112,38 @@ HTML
         }
 
         my $host_cell = $hostname
-            ? html_escape($hostname) . '<br><span class="ip">' . html_escape($ip) . '</span>'
-            : html_escape($ip);
+            ? commonFunctionsPackage::html_escape($hostname) . '<br><span class="ip">' . commonFunctionsPackage::html_escape($ip) . '</span>'
+            : commonFunctionsPackage::html_escape($ip);
 
         my $referer_cell = ($referer eq '-' || $referer eq '')
             ? '<span class="none">-</span>'
-            : '<a href="' . html_escape($referer) . '" target="_blank" rel="noopener">' . html_escape($referer) . '</a>';
+            : '<a href="' . commonFunctionsPackage::html_escape($referer) . '" target="_blank" rel="noopener">' . commonFunctionsPackage::html_escape($referer) . '</a>';
 
         print "            <tr>\n";
 
-        if ($ip eq '133.202.106.174' || $ip eq '49.97.14.169') {
-            print "                <td class='datetime myip'>"  . html_escape($datetime) . "</td>\n";
+        if (commonFunctionsPackage::my_ip_check($ip)) {
+            print "                <td class='datetime myip'>"  . commonFunctionsPackage::html_escape($datetime) . "</td>\n";
             print "                <td class='ip-address myip'>$host_cell</td>\n";
-            print "                <td class='myip'>"           . html_escape($method)   . "</td>\n";
-            print "                <td class='host-path myip'>" . html_escape($path)     . "</td>\n";
+            print "                <td class='myip'>"           . commonFunctionsPackage::html_escape($method)   . "</td>\n";
+            print "                <td class='host-path myip'>" . commonFunctionsPackage::html_escape($path)     . "</td>\n";
             print "                <td class='referrer myip'>$referer_cell</td>\n";
-            print "                <td class='myip'>"           . html_escape($ua)       . "</td>\n";
-        } elsif ($ip eq '45.156.128.64'        ||
-                 $ip eq '109.105.209.7'        ||
-                 $ip eq '157.173.122.176'      ||
-                 $ip eq '199.45.154.146'       ||
-                 $ip eq '134.209.84.79'        ||
-                 $ip eq '18.246.159.3'         ||
-                 $hostname =~ /dataprovider/   ||
-                 $hostname =~ /ahrefs/         ||
-                 $ua       =~ /Go-http-client/ ||
-                 $ua       =~ /Cortex-Xpanse/  ||
-                 $ua       =~ /SaaSBrowserBot/ ||
-                 $ua       =~ /CMS-Checker/    ||
-                 $ua       =~ /2ip bot/        ||
-                 $ua       =~ /Who\.is Bot/    ||
-                 $ua       =~ /GPTBot/         ||
-                 $ua       =~ /rootevidence\.com$/) {
-            print "                <td class='datetime dangerous-ip'>"  . html_escape($datetime) . "</td>\n";
+            print "                <td class='myip'>"           . commonFunctionsPackage::html_escape($ua)       . "</td>\n";
+        } elsif (commonFunctionsPackage::alert_ip_check($ip)             ||
+                 commonFunctionsPackage::alert_hostname_check($hostname) ||
+                 commonFunctionsPackage::alert_ua_chech($ua)) {
+            print "                <td class='datetime dangerous-ip'>"  . commonFunctionsPackage::html_escape($datetime) . "</td>\n";
             print "                <td class='ip-address dangerous-ip'>$host_cell</td>\n";
-            print "                <td class='dangerous-ip'>"           . html_escape($method)   . "</td>\n";
-            print "                <td class='host-path dangerous-ip'>" . html_escape($path)     . "</td>\n";
+            print "                <td class='dangerous-ip'>"           . commonFunctionsPackage::html_escape($method)   . "</td>\n";
+            print "                <td class='host-path dangerous-ip'>" . commonFunctionsPackage::html_escape($path)     . "</td>\n";
             print "                <td class='referrer dangerous-ip'>$referer_cell</td>\n";
-            print "                <td class='dangerous-ip'>"           . html_escape($ua)       . "</td>\n";
+            print "                <td class='dangerous-ip'>"           . commonFunctionsPackage::html_escape($ua)       . "</td>\n";
         } else {
-            print "                <td class='datetime'>"  . html_escape($datetime) . "</td>\n";
+            print "                <td class='datetime'>"  . commonFunctionsPackage::html_escape($datetime) . "</td>\n";
             print "                <td class='ip-address'>$host_cell</td>\n";
-            print "                <td>"                   . html_escape($method)   . "</td>\n";
-            print "                <td class='host-path'>" . html_escape($path)     . "</td>\n";
+            print "                <td>"                   . commonFunctionsPackage::html_escape($method)   . "</td>\n";
+            print "                <td class='host-path'>" . commonFunctionsPackage::html_escape($path)     . "</td>\n";
             print "                <td class='referrer'>$referer_cell</td>\n";
-            print "                <td>"                   . html_escape($ua)       . "</td>\n";
+            print "                <td>"                   . commonFunctionsPackage::html_escape($ua)       . "</td>\n";
         }
 
         print "            </tr>\n";
