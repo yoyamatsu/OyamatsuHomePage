@@ -9,9 +9,9 @@ package commonFunctionsPackage;
 # Copyright(C) 2026 Yoshitaka Oyamatsu All rights reserved.
 #
 # Created : 2026/06/21(Su)
-# Updated : 
+# Updated : 2026/08/29(Sa)
 # Author  : Yoshitaka Oyamatsu
-# Version : 0.0
+# Version : 0.1
 ################################################################################
 
 #-------------------------------------------------------------------------------
@@ -34,7 +34,8 @@ sub html_escape {
 sub my_ip_check {
     my ($ip) = @_;
 
-    return ($ip eq '133.202.106.174' || $ip eq '49.97.14.169' || $ip eq '49.97.22.186');
+    return ($ip eq '133.202.106.174' || $ip eq '49.97.14.169' || $ip eq '49.97.22.186' ||
+            $ip eq '125.195.134.13');
 }
 
 #-------------------------------------------------------------------------------
