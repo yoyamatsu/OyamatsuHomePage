@@ -163,9 +163,20 @@
                     <li><a href="https://youtu.be/khIiE_kF8Ns" target="_blank">宇宙船のトイレのゴミは実際どこへ行くのか？ 宇宙飛行士はどうやって用を足しているのか？《動画》</a><img src="/images/ping/Video_20260627_032312.png" width="28px"></li>
                 </ul>
             </div>
+            <div class="linkCard">
+                <div class="cardHeader">
+                    <a href="https://www.youtube.com/@DestinySpace" target="_blank">
+                        <img src="https://yt3.ggpht.com/ytc/AIdro_lEXbFryVFi1qX25kwClNnidrm662c-6kMhlvtXKWBCl_Q=s48-c-k-c0x00ffffff-no-rj" class="logo-img" alt="Destiny" width="40px">
+                    </a>
+                    <span class="channelName">Destiny</span>
+                </div>
+                <ul class="videoList">
+                    <li><a href="https://youtu.be/DG4XF8Kzcjs" target="_blank">ジェイムズ・ウェッブ宇宙望遠鏡が明かした、土星が太陽系で最も恐ろしい惑星である理由《動画》</a><img src="/images/ping/Video_20260627_032312.png" width="28px"></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="sectionTitle">航空機・戦闘機</div>
+        <div class="sectionTitle">航空機・戦闘機・ミリタリー</div>
         <div class="cardGrid">
             <div class="linkCard">
                 <div class="cardHeader">
@@ -199,6 +210,17 @@
                 </div>
                 <ul class="videoList">
                     <li><a href="https://youtu.be/t_raBzBnfq0" target="_blank">特攻を回避せよ！ 現代エンジニアが零戦に施した｢魔改造｣の全貌《動画》</a><img src="/images/ping/Video_20260627_032312.png" width="28px"></li>
+                </ul>
+            </div>
+            <div class="linkCard">
+                <div class="cardHeader">
+                    <a href="https://www.youtube.com/@USAMilitaryChannel2" target="_blank">
+                        <img src="https://yt3.ggpht.com/ytc/AIdro_kUVCzbPSvS5Kk6-bhbU5yFUnCwdICSWM6tZOZay6wGEg=s48-c-k-c0x00ffffff-no-rj" class="logo-img" alt="USA Military Channel 2" width="40px">
+                    </a>
+                    <span class="channelName">USA Military Channel 2</span>
+                </div>
+                <ul class="videoList">
+                    <li><a href="https://youtu.be/toVt4jXKWKk" target="_blank">新型空母ケネディが完成【トランプが突然の設計変更】電磁式カタパルトを蒸気式に戻す!?《動画》</a><img src="/images/ping/Video_20260627_032312.png" width="28px"></li>
                 </ul>
             </div>
         </div>
